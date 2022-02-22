@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main">
+    <div class="judul">
+    <h1 id="title">JKT48 Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+      </div>
+    
+    <form id="survey-form">
+      <div class="input-box">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      
+      <div class="input-box">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      
+      <div class="input-box">
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" placeholder="Enter your age" min="15" max="40" required>
+      </div>
+      
+      <div class="input-box">
+      <label for="dropdown" id="dropdown-label">
+        How do you know JKT48? </label>
+        <select id="dropdown">
+          <option>Test 1</option>
+          <option>Test 2</option>
+        </select>
+      </label>
+      </div>
+    
+    <div class="input-box">
+      <label for="radio" id="radio-label">Who is your favourite member?</label>
+      <div class="form-check"> <input type="radio" name="member" value="1" checked /> Anin</div> 
+      <div class="form-check"><input type="radio" name="member" value="2" /> Celine </div> 
+      <div class="form-check"><input type="radio" name="member" value="3" /> Shani <br /></div>
+      <div class="form-check"><input type="radio" name="member" value="4" /> Gracia <br /></div>
+      <div class="form-check"><input type="radio" name="member" value="5" /> Zee <br /></div>
+      <div class="form-check"><input type="radio" name="member" value="6" /> Fiony <br /></div>
+      <div class="form-check"><input type="radio" name="member" value="7" /> Chika <br /></div>
+      <div class="form-check"><input type="radio" name="member" value="8" /> Marsha <br /></div>
+      <div class="form-check"><input type="radio" name="member" value="9" /> Jesslyn <br /></div>
+      </div>
+    
+   <div class="input-box">
+     <label for="checkbox"> Please choose your favorite album(s)?</label>
+     <div class="form-check"> <input type="checkbox" value="River">River</div>
+     <div class="form-check"> <input type="checkbox" value="River">Heavy Rotation</div>
+     <div class="form-check"> <input type="checkbox" value="River">Fortune Cookie</div>
+     <div class="form-check"> <input type="checkbox" value="River">High Tension</div>
+     <div class="form-check"> <input type="checkbox" value="River">River</div>
+   </div>
+    
+    <div class="input-box">
+      <label for="comments" id="comments-label">
+        Any comments or suggestions?
+         </label>
+        <textarea id="comments" cols="80" rows="10"></textarea>
+    </div>
+    
+    <button type="submit" id ="submit">Submit</button>
+    </form>
+   </div>
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
